@@ -47,7 +47,7 @@ print("--------------------------------")
 for candidate in candidate_votes:
     votes = candidate_votes.get(candidate)
     vote_percentage = float(votes) /  float(total_votes) * 100
-    vote_percentage = round(vote_percentage, 2)
+    vote_percentage = round(vote_percentage, 3)
     print(candidate, " ", vote_percentage, "%", " ", votes)
 print(f" ------------------------------")
 print(f"Winner: {candidate_winner}")
@@ -64,7 +64,7 @@ PyPollElectionWinner.write(f"-----------------------------\n")
 for candidate in candidate_votes:
     votes = candidate_votes.get(candidate)
     vote_percentage = float(votes) /  float(total_votes) * 100
-    vote_percentage = round(vote_percentage, 2)
+    vote_percentage = round(vote_percentage, 3)
     PyPollElectionWinner.write(candidate + " "+ str(vote_percentage) + "%" + " " + str(votes) + "\n" )
 PyPollElectionWinner.write(f" ----------------------------\n")
 PyPollElectionWinner.write(f"Winner: {candidate_winner}\n")
